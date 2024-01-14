@@ -20,7 +20,7 @@ def exploit():
             #   except for the bit in position `bit_idx`. The code `1 << bit_idx`
             #   creates a byte by shifting the bit `1` to the left `bit_idx` times. Thus,
             #   the XOR operation will flip the bit in position `bit_idx`
-            # - All bytes after the current `position_idx` are left alone
+            # - All bytes after the current `position_idx` are left alone.
             bitflip_guess = (
                 raw_cookie[0:position_idx]
                 + ((raw_cookie[position_idx] ^ (1 << bit_idx)).to_bytes(1, "big"))
