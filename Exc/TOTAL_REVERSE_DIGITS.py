@@ -15,7 +15,7 @@ def reverseNum(num):
     return reversed_num
 
 def main(num):
-    if sumOfEachElement(num) == reverseNum(sumOfEachElement(num)):
+    if (sumOfEachElement(num) == reverseNum(sumOfEachElement(num))) and sumOfEachElement(num) > 9:
         print("YES")
     else:
         print("NO")
