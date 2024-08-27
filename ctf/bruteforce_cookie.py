@@ -4,7 +4,7 @@ from flask.sessions import TaggedJSONSerializer
 
 wordlist = ["snickerdoodle", "chocolate chip", "oatmeal raisin", "gingersnap", "shortbread", "peanut butter", "whoopie pie", "sugar", "molasses", "kiss", "biscotti", "butter", "spritz", "snowball", "drop", "thumbprint", "pinwheel", "wafer", "macaroon", "fortune", "crinkle", "icebox", "gingerbread", "tassie", "lebkuchen", "macaron", "black and white", "white chocolate macadamia"]
 
-cookie_str="eyJ2ZXJ5X2F1dGgiOiJzbmlja2VyZG9vZGxlIn0.YF7u-Q.G5B5RUmEVaXNyLzjitMwzPxALp4"
+cookie_str="eyJ2ZXJ5X2F1dGgiOiJibGFuayJ9.Zs1uOA.medb9zveqjv2ntwMp3_4OnClzr0"
 def decode_flask_cookie(secret_key, cookie_str):
     salt = 'cookie-session'
     serializer = TaggedJSONSerializer()
